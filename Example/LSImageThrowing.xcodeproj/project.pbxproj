@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		90C189CC904FFFB0D47DAAA9 /* Pods_LSImageThrowing_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA9FF77CAD083B49AF5189 /* Pods_LSImageThrowing_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D64A63F91BC2DAFF00340AA6 /* UIImage+namedOrPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A63F71BC2DAFF00340AA6 /* UIImage+namedOrPlaceholder.swift */; settings = {ASSET_TAGS = (); }; };
+		D64A63FA1BC2DAFF00340AA6 /* UIImage+namedOrThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A63F81BC2DAFF00340AA6 /* UIImage+namedOrThrow.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DE7808362A873EE6EF83FBD /* Pods-LSImageThrowing_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSImageThrowing_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSImageThrowing_Tests/Pods-LSImageThrowing_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		43CAAA7CB99D34FD82914002 /* LSImageThrowing.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSImageThrowing.podspec; path = ../LSImageThrowing.podspec; sourceTree = "<group>"; };
 		445B3238C20CD8ED0203FAA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = LSImageThrowing_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* LSImageThrowing_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSImageThrowing_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6827FAA788DAA851EB311C2D /* Pods-LSImageThrowing_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSImageThrowing_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSImageThrowing_Tests/Pods-LSImageThrowing_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B237E0DB0193ED3C90DB8216 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CECA9FF77CAD083B49AF5189 /* Pods_LSImageThrowing_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSImageThrowing_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64A63F71BC2DAFF00340AA6 /* UIImage+namedOrPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+namedOrPlaceholder.swift"; path = "../Pod/Classes/UIImage+namedOrPlaceholder.swift"; sourceTree = "<group>"; };
+		D64A63F81BC2DAFF00340AA6 /* UIImage+namedOrThrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+namedOrThrow.swift"; path = "../Pod/Classes/UIImage+namedOrThrow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				D64A63F61BC2DAEC00340AA6 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -58,7 +63,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* LSImageThrowing_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +95,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		D64A63F61BC2DAEC00340AA6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D64A63F71BC2DAFF00340AA6 /* UIImage+namedOrPlaceholder.swift */,
+				D64A63F81BC2DAFF00340AA6 /* UIImage+namedOrThrow.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		DC26A475CAD437098BEEB03F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +132,7 @@
 			);
 			name = LSImageThrowing_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* LSImageThrowing_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64A63FA1BC2DAFF00340AA6 /* UIImage+namedOrThrow.swift in Sources */,
+				D64A63F91BC2DAFF00340AA6 /* UIImage+namedOrPlaceholder.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
